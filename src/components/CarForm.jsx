@@ -20,10 +20,6 @@ export default function CarForm() {
   async function handleSubmit(event) {
     event.preventDefault()
     dispatch(addCar({ name, cost }))
-
-    // Reset the form
-    dispatch(changeName(""))
-    dispatch(changeCost(0))
   }
 
   return (
