@@ -6,7 +6,7 @@ export default function CarList() {
   const cars = useSelector((state) => {
     const { searchTerm, data } = state.cars
     return data.filter((car) => car.name.toLowerCase().includes(searchTerm.toLowerCase()))
-  })
+  }) // searching & filtering
 
   function handleCarDelete(id) {
     dispatch(removeCar(id))
